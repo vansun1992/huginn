@@ -209,8 +209,6 @@ if_true(ENV['DATABASE_ADAPTER'].strip == 'mysql2') do
   gem 'mysql2', "~> 0.5", ">= 0.5.6"
 end
 
-gem 'pg'
-
 GemfileHelper.parse_each_agent_gem(ENV['ADDITIONAL_GEMS']) do |args|
   gem *args
 end
