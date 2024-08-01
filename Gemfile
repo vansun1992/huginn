@@ -212,3 +212,5 @@ end
 GemfileHelper.parse_each_agent_gem(ENV['ADDITIONAL_GEMS']) do |args|
   gem *args
 end
+
+# Update for Heroku
